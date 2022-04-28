@@ -1,0 +1,27 @@
+<div class="super-container">
+    <div class="profile-container"  *ngIf="!isContentLoading">
+        <p>Welcome to Super Hero Profile</p>
+    </div>
+    <div *ngIf="isContentLoading" class="counter-container">
+        <!-- <p class="counter">{{this.counter}}</p> -->
+        <div class="skeleton-loader-container">
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+        </div>
+        <div class="skeleton-loader-container">
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+        </div>
+        <div class="skeleton-loader-container">
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+        </div>
+        <!-- <span class="content-text">Content is Loading...</span> -->
+    </div>
+</div>
